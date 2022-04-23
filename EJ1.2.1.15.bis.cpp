@@ -1,9 +1,12 @@
 /*
+
+
+
  * EJ1.2.1.15.bis.cpp
  *
  *  Created on: 20/04/2022
  *      Author: 895
- */
+*/
 
 #include <iostream>
 #include <string>
@@ -39,11 +42,14 @@ int main(void)
          if (actual%i==0){conDivisores++;}
          i++;
             }
-      if (conDivisores==2){cout<<actual;}
+      if (conDivisores==2){cout<<actual<<" ";}
       else {n++;}
       actual++;
    }
    return 0;
 }
+
+
+
 
 
