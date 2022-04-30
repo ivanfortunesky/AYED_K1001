@@ -1,66 +1,39 @@
 /*
 
+
  * EJ1.2.1.31.cpp
  *
  *  Created on: 19/04/2022
  *      Author: 895
 
-*/
+
 
 #include <iostream>
 #include<conio.h>
 #include <string.h>
 #include<string>
 #include <locale.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include<stdio.h>
+#include<conio.h>
 using namespace std;
 
-
-bool validarMENOR(int a, int b)
-      {
-         if (a<b){return true;}
-   return false;
-         }
-bool validarMAXIMA(int a, int b)
-      {
-         if (a>b){return true;}
-   return false;
-         }
-int sumar(int a,int b){
-   int suma =0;
-   suma=a+b;
-   return suma;
-}
-void reset(int &a){
-   a=999999999;
-}
-
-bool validarPalabra(int a, int b){
-   if (a>b)
-      {return true;}
-   return false;
-}
-
-void logearSeguidilla(int a, int b){
-
-//int seguidilla[b]=a;
-
-}
-
-
-int main(void)
-
+int main()
 {
- // int longuitud;
-  // char question1[] = "What is your name? ";
-  //string question2 = "Where do you live? ";
-  char palabra [100];
-  //cin >> palabra;
-  cin.getline(palabra,100,'.');
-  cout <<endl;
-  cout <<"Cadenas obtenida:  ";
-  cout <<palabra;
-  //cout << " from " << answer2 << "!\n";
-  return 0;
+
+
+ char cad[200], *p=cad; //el puntero p comienza desde el principio de cad
+ printf("Teclea una frase: "); gets(cad);
+ while (*p!=0) //mientras p no alcance el character \0 de final de cadena
+ { if (p==cad || (*p!=' ' && *(p-1)==' ')) //condicion de primera letra de una palabra
+ if (*p>='a' && *p<='z') //si es una letra minúscula
+ *p = *p - ('a'-'A'); //también podría ser: *p -= 'a'-'A';
+ p++; //p pasa a apuntar a la siguiente letra
+ }
+ printf("\nLa frase corregida es: %s", cad);
+
+    return 0;
 }
 
 
@@ -69,3 +42,4 @@ int main(void)
 
 
 
+*/

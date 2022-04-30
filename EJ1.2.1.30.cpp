@@ -1,9 +1,12 @@
 /*
+
+
+
  * EJ1.2.1.30.cpp
  *
  *  Created on: 17/04/2022
  *      Author: 895
- */
+
 
 #include <iostream>
 #include <string>
@@ -111,3 +114,6 @@ while (aux==true){
 }
 
 
+
+
+*/
