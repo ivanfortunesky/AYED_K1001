@@ -1,10 +1,13 @@
 /*
- * billetesContar.cpp
+ * EJ1.2.2.2.sueldo.cpp
  *
+ *  Created on: 30/04/2022
  *      Author: Iván Fortunesky
  *      UTN - FRBA - AyED - K1001
  */
-/*#include <iostream>
+
+
+#include <iostream>
 #include <string>
 #include <locale.h>
 using namespace std;
@@ -75,15 +78,13 @@ cout<<"sueldoToString(sueldoContado): ";
 cout<<sueldoToString(sueldoContado)<<endl;
 
 
-cout<<"sueldo sueldoContado.billetes100 "<<sueldoContado.billetes100<<endl;
+/*cout<<"sueldo sueldoContado.billetes100 "<<sueldoContado.billetes100<<endl;
 cout<<"sueldo sueldoContado.billetes50 "<<sueldoContado.billetes50<<endl;
 cout<<"sueldo sueldoContado.billetes20 "<<sueldoContado.billetes20<<endl;
 cout<<"sueldo sueldoContado.billetes10 "<<sueldoContado.billetes10<<endl;
 cout<<"sueldo sueldoContado.billetes5 "<<sueldoContado.billetes5<<endl;
 cout<<"sueldo sueldoContado.billetes2 "<<sueldoContado.billetes2<<endl;
-cout<<"sueldo sueldoContado.billetes1 "<<sueldoContado.billetes1<<endl;
+cout<<"sueldo sueldoContado.billetes1 "<<sueldoContado.billetes1<<endl;*/
 
-return 0;}*/
-
-
+return 0;}
 
