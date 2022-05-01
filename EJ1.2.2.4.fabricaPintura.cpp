@@ -1,10 +1,11 @@
 /*
+
  * EJ1.2.2.4.fabricaPintura.cpp
  *
  *  Created on: 01/05/2022
  *      Author: Iván Fortunesky
  *      UTN - FRBA - AyED - K1001
- */
+*/
 
 #include <iostream>
 #include <string>
@@ -53,3 +54,4 @@ cout<<"Infracción Menor valor: "<<infraccionToString(MENOR)<<endl;
 
 return 0;
 }
+

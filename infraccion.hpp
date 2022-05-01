@@ -7,6 +7,10 @@
  */
 using namespace std;
 #include<conio.h>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include "cargarString.hpp"
 
 
 struct infraccion {
@@ -56,9 +60,7 @@ infraccion infraccionCargar(void)
    cout<<endl;
    if (x.tInfr>0 && x.tInfr<5){
          cout<<"motivo: ";
-         x.motivo = "Still under construction";
-   //getline(cin, x.motivo);
-   //x.motivo = aux;
+         x.motivo = cargarString();
          cout<<endl;
          cout<<"valor: ";
          cin>>x.valor;
