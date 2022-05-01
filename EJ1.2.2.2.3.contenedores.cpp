@@ -120,6 +120,7 @@ contenedor contenerdorCargadoUltimo, contenedorMaximo;
 puerto puerto1, puerto2, puerto3;
 int main(void)
 {
+   int contador=0;
    contenedorVaciar(contenedorMaximo);
    puertoVaciar(puerto1);
    puertoVaciar(puerto2);
@@ -130,8 +131,9 @@ int main(void)
          pesoTotal = pesoTotal + contenerdorCargadoUltimo.peso;
          if (contenedorValidarMaximoPeso(contenerdorCargadoUltimo,contenedorMaximo)){contenedorMaximo = contenerdorCargadoUltimo;}
          contenedorRegistrarPuerto(contenerdorCargadoUltimo,puerto1,puerto2,puerto3);
+         contador ++;
          }
-   while (contenerdorCargadoUltimo.idCont<4);
+   while (contador<10); // Se puede ampliar a 100 contenedores
 
 cout<<endl;
 cout<<"pesoTotal: "<<pesoTotal<<endl;
