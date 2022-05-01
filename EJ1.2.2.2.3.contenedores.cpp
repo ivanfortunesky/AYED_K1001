@@ -1,15 +1,17 @@
 /*
- * EJ1.2.2.2.sueldo.cpp
+
+ * EJ1.2.2.2.contenedores.cpp
  *
  *  Created on: 30/04/2022
  *      Author: Iván Fortunesky
  *      UTN - FRBA - AyED - K1001
- */
+*/
 
 
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <locale.h>
+//#include "contenedor.hpp"
 
 using namespace std;
 
@@ -22,13 +24,13 @@ int cargarSueldo(void)
    return a;
 }
 
-struct contenedor{
+struct contenedor{ // done
     int idCont;
     long int peso;
     int idPuerto;};
 
 
-contenedor contenedorCargar(void)
+contenedor contenedorCargar(void)  // done
 {
    contenedor x;
    cout<<"idCont: ";
@@ -43,13 +45,13 @@ contenedor contenedorCargar(void)
    return x;
 }
 
-bool contenedorValidarMaximoPeso(contenedor c, contenedor b ){
+bool contenedorValidarMaximoPeso(contenedor c, contenedor b ){ // done
 
     if (c.peso >= b.peso) {return true;}
     else {return false;}
 }
 
-string contenedorToString(){
+string contenedorToString(){  //done
 
    string x="";
 
@@ -57,7 +59,7 @@ string contenedorToString(){
    return x;
 }
 
-void contenedorVaciar(contenedor &a){
+void contenedorVaciar(contenedor &a){ // done
 
    a.peso =0;
    a.idCont =0;
@@ -71,7 +73,7 @@ struct puerto {
    int n;
 };
 
-void contenedorRegistrarPuerto (contenedor a, puerto &b, puerto &c,puerto &d){
+void contenedorRegistrarPuerto (contenedor a, puerto &b, puerto &c,puerto &d){ // done
 
    int i = a.idPuerto;
 
@@ -116,8 +118,10 @@ string puertoToStringImprimir(puerto a){
 
 double pesoTotal =0;
 int pesoMaximo=0;
+
 contenedor contenerdorCargadoUltimo, contenedorMaximo;
 puerto puerto1, puerto2, puerto3;
+
 int main(void)
 {
    int contador=0;
@@ -146,13 +150,7 @@ cout<<"Imprimir Puerto #3: "<<puertoToStringImprimir(puerto3)<<endl;
 
 
 
-/*cout<<"sueldo sueldoContado.billetes100 "<<sueldoContado.billetes100<<endl;
-cout<<"sueldo sueldoContado.billetes50 "<<sueldoContado.billetes50<<endl;
-cout<<"sueldo sueldoContado.billetes20 "<<sueldoContado.billetes20<<endl;
-cout<<"sueldo sueldoContado.billetes10 "<<sueldoContado.billetes10<<endl;
-cout<<"sueldo sueldoContado.billetes5 "<<sueldoContado.billetes5<<endl;
-cout<<"sueldo sueldoContado.billetes2 "<<sueldoContado.billetes2<<endl;
-cout<<"sueldo sueldoContado.billetes1 "<<sueldoContado.billetes1<<endl;*/
 
-return 0;}
+return 0;}*/
+
 
